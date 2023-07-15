@@ -1,7 +1,7 @@
 ---
 title: ElixirConf 2022 - That's a Wrap!
 description: Baby's first developer conference.
-date: "September 9, 2022"
+date: "2022/09/09"
 ---
 
 If you've been following my sporadic twitter posts as I continue building my skills as a developer, you'll know that I was incredibly fortunate to be accepted as a speaker at this year's ElixirConf in Aurora, Colorado. For the last week, I (along with fellow Alembians [Josh Price](https://twitter.com/joshprice) and [Zach Daniel](https://twitter.com/ZachSDaniel1)) have had the privilege of hanging out in the United States with some of the most talented people I have ever met, all of whom are present and vocal members of the Elixir community.

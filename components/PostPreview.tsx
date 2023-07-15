@@ -12,7 +12,13 @@ const PostPreview = (props: PostMetadata) => {
           {props.title}
         </h2>
       </Link>
-      <p className="text-sm text-slate-400">{props.date}</p>
+      <p className="text-sm text-slate-400">
+        {new Date(props.date).toLocaleDateString("en-US", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        })}
+      </p>
       <p className="text-slate-700">{props.description}</p>
     </div>
   );

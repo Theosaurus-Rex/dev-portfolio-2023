@@ -1,7 +1,7 @@
 ---
 title: How Keeping a Sketchbook Can Make You a Better Developer
 description: The benefits I've found from keeping a sketchbook while learning to code.
-date: "July 7, 2021"
+date: "2021/07/07"
 ---
 
 If you're not used to practicing visual art, the idea of keeping a sketchbook might seem pretty daunting. Even seasoned artists have a famed fear of the ever-intimidating blank page. So crisp and smooth - how could we possibly ruin it with our pencil marks and chicken-scratch handwriting? Getting over this fear is worth another blog post entirely, but once you push through, a sketchbook can be a useful everyday tool for recording everyday thoughts, feelings, and ideas.

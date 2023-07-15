@@ -25,7 +25,13 @@ const PostPage = (props: any) => {
     <div>
       <div className="my-12 text-center">
         <h1 className="text-2xl text-slate-600 font-bold">{post.data.title}</h1>
-        <p className="text-slate-400 mt-2">{post.data.date}</p>
+        <p className="text-slate-400 mt-2">
+          {new Date(post.data.date).toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          })}
+        </p>
       </div>
 
       <article className="prose lg:prose-xl">

@@ -1,7 +1,7 @@
 ---
 title: A Tale of Bootcamp and Blogging
 description: Why I decided to become a developer.
-date: "November 30, 2020"
+date: "2020/11/30"
 ---
 
 In February of 2020, I lost my retail job.
