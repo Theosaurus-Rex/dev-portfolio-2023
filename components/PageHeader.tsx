@@ -19,6 +19,13 @@ const PageHeader = () => {
             >
               Blog
             </Link>
+            <p className="text-slate-300">-</p>
+            <Link
+              href="/talks"
+              className="text-lg text-slate-300 hover:underline"
+            >
+              Talks
+            </Link>
           </div>
         </div>
       </div>
