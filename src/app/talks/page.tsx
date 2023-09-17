@@ -1,3 +1,6 @@
+import getTalkMetadata from "../../../components/getTalkMetadata";
+import TalkPreview from "../../../components/TalkPreview";
+
 const TalksIndex = () => {
   const talkMetadata = getTalkMetadata();
   const talkPreviews = talkMetadata.map((talk) => (
