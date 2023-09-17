@@ -21,8 +21,9 @@ export const generateStaticParams = async () => {
 const TalkPage = (props: any) => {
   const slug = props.params.slug;
   const talk = getTalkContent(slug);
+
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <div className="my-12 text-center">
         <h1 className="text-4xl text-slate-900 font-bold">{talk.data.title}</h1>
         <p className="text-slate-400 mt-4 text-xl">
@@ -34,6 +35,14 @@ const TalkPage = (props: any) => {
         </p>
       </div>
 
+      <iframe
+        width="540"
+        height="315"
+        src={talk.data.videoUrl}
+        title={talk.data.title}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      ></iframe>
       <article className="prose lg:prose-xl">
         <Markdown>{talk.content}</Markdown>
       </article>
