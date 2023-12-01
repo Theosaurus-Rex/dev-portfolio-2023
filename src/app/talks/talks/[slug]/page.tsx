@@ -25,8 +25,8 @@ const TalkPage = (props: any) => {
   return (
     <div className="flex flex-col items-center">
       <div className="my-12 text-center">
-        <h1 className="text-4xl text-slate-900 font-bold">{talk.data.title}</h1>
-        <p className="text-slate-400 mt-4 text-xl">
+        <h1 className="text-4xl text-gray-900 font-bold">{talk.data.title}</h1>
+        <p className="text-gray-400 mt-4 text-xl">
           {new Date(talk.data.date).toLocaleDateString("en-US", {
             year: "numeric",
             month: "long",
