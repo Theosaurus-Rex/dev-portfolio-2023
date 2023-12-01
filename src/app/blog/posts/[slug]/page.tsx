@@ -24,8 +24,14 @@ const PostPage = (props: any) => {
   return (
     <div>
       <div className="my-12 text-center">
-        <h1 className="text-4xl text-slate-900 font-bold">{post.data.title}</h1>
-        <p className="text-slate-400 mt-4 text-xl">
+        <div className="mx-auto max-w-7xl">
+          <img
+            src={post.data.imageUrl}
+            className="w-full max-h-96 rounded-2xl bg-gray-100 object-cover mb-6"
+          />
+        </div>
+        <h1 className="text-4xl text-gray-900 font-bold">{post.data.title}</h1>
+        <p className="text-gray-400 mt-4 text-xl">
           {new Date(post.data.date).toLocaleDateString("en-US", {
             year: "numeric",
             month: "long",
