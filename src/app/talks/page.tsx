@@ -8,11 +8,11 @@ const TalksIndex = () => {
   ));
 
   return (
-    <div className="flex flex-col space-y-4">
-      <h2 className="text-4xl font-bold text-slate-800 text-center">Talks</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {talkPreviews}
-      </div>
+    <div className="flex flex-col">
+      <h1 className="text-6xl font-bold text-gray-800 text-center my-8">
+        Talks
+      </h1>
+      <div className="flex flex-col divide-y gap-4">{talkPreviews}</div>
     </div>
   );
 };
