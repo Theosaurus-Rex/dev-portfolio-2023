@@ -2,6 +2,7 @@
 title: 2022 Retrospective
 description: A reflection on the past year and a peek at the new year to come.
 date: "2022/12/21"
+imageUrl: "https://images.unsplash.com/photo-1493974035792-cf9368c76125?q=80&w=3431&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 ---
 
 As far as years go, 2022 was pretty eventful for me. I wanted to take the time to reflect on everything that has happened, how I've grown as both a professional and a person, and some of the things I'm looking forward to in the new year.

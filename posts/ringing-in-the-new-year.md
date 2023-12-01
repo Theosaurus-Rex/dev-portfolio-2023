@@ -2,6 +2,7 @@
 title: Ringing in the New Year
 description: An overview of my plans and goals for 2023.
 date: "2023/01/02"
+imageUrl: "https://images.unsplash.com/photo-1498673394965-85cb14905c89?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 ---
 
 It's a new year, and the perfect time to start planning my professional and personal goals for the next twelve months. If you read [my previous post](/posts/2022_retrospective) wrapping up everything I did in 2022, you'll see that I touched on a few things I'll be tackling in my professional life this year, but I wanted to take the time to properly lay out some of my personal and professional goals in a written format.

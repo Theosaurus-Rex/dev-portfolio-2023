@@ -2,6 +2,7 @@
 title: TIL Why Marquee Was Deprecated
 description: Learning about the much-hated marquee tag and why it's a crime to use it.
 date: "2022/11/08"
+imageUrl: "https://images.unsplash.com/photo-1580987290897-710bd922208b?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 ---
 
 My older sibling and I are both web developers, so we often swap developer horror stories over coffee. This morning, they mentioned that their boss had told the dev team he wanted a kind of "slideshow banner" at the top of their company's new website. My sibling and the senior dev apparently just looked at each other and laughed, and had to explain to their boss that what he wanted is basically illegal by web development standards.
