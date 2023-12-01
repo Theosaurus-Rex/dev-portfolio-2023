@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { SocialIcon } from "react-social-icons";
 
 const navigation = [
   { name: "Blog", href: "/blog" },
@@ -82,6 +83,23 @@ export default function Example() {
                     {item.name}
                   </Link>
                 ))}
+              </div>
+              <div className="flex flex-row justify-between pt-4 mx-2">
+                <SocialIcon
+                  url="https://www.linkedin.com/in/theo-harris-coder/"
+                  bgColor="#9333ea"
+                  target="_blank"
+                ></SocialIcon>
+                <SocialIcon
+                  url="https://github.com/Theosaurus-Rex"
+                  bgColor="#9333ea"
+                  target="_blank"
+                ></SocialIcon>
+                <SocialIcon
+                  url="https://dribbble.com/Theosaurus-Rex"
+                  bgColor="#9333ea"
+                  target="_blank"
+                ></SocialIcon>
               </div>
             </div>
           </div>
