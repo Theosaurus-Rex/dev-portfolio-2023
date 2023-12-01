@@ -2,6 +2,7 @@
 title: Fullstack Bootcamp - Leaving JS for Later
 description: Thoughts on why Ruby was the perfect first language for me.
 date: "2020/12/08"
+imageUrl: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 ---
 
 As an active member of Dev Twitter, I'm more than familiar with the kinds of tweets circulating the tech community. Code snippets, portfolio highlights, and celebratory posts following successful job interviews are always a pleasure to see. However, a trend I've noticed among so-called "Code Influencers" (Codefluencers?) is the generic numbered list of "Steps to Become a Full Stack Developer", which usually go something like this:
