@@ -3,4 +3,6 @@ export interface ProjectMetadata {
   description: string;
   githubUrl: string;
   liveUrl: string;
+  imageSrc: string;
+  slug: string;
 }
