@@ -14,7 +14,7 @@ const getProjectMetadata = (): ProjectMetadata[] => {
     const matterResult = matter(fileContents);
 
     return {
-      name: matterResult.data.title,
+      name: matterResult.data.name,
       description: matterResult.data.description,
       githubUrl: matterResult.data.githubUrl,
       liveUrl: matterResult.data.liveUrl,
