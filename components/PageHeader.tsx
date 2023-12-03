@@ -8,6 +8,7 @@ import { SocialIcon } from "react-social-icons";
 const navigation = [
   { name: "Blog", href: "/blog" },
   { name: "Talks", href: "/talks" },
+  { name: "Projects", href: "/projects" },
 ];
 
 export default function Example() {
