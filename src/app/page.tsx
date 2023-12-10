@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Pill from "../../components/Pill";
 export default function Home() {
   return (
     <main className="flex flex-col p-16 space-y-10">
@@ -83,6 +84,62 @@ export default function Home() {
               <li>Figma</li>
               <li>Miro</li>
             </ul>
+          </div>
+        </div>
+      </section>
+      <section className="flex flex-col space-y-4">
+        <h2 className="text-left text-4xl font-bold text-gray-800">
+          Experience
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-6 text-lg">
+          <div className="col-start-1 col-span-1 uppercase text-sm font-semibold mt-1 text-purple-600">
+            Jan 2022 - Present
+          </div>
+          <div className="md:col-start-2 col-span-1 flex flex-col space-y-2">
+            <h3 className="font-semibold">Full Stack Developer @ Alembic</h3>
+            <p className="text-base">
+              Developed several rapid prototypes in small, agile teams for
+              greenfield projects across several different business domains,
+              including education, natural resources, and automotive services.
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <Pill text="Elixir" />
+              <Pill text="Phoenix LiveView" />
+              <Pill text="Ash Framework" />
+              <Pill text="React" />
+              <Pill text="Tailwind CSS" />
+            </div>
+          </div>
+          <div className="col-start-1 col-span-1 uppercase text-sm font-semibold mt-1 text-purple-600">
+            Aug 2021 - Jan 2022
+          </div>
+          <div className="md:col-start-2 col-span-1 flex flex-col space-y-2">
+            <h3 className="font-semibold">M365 Developer @ Engage Squared</h3>
+            <p className="text-base">
+              Worked in project teams alongside consultants to deliver solutions
+              across various Microsoft ecosystem platforms, including
+              SharePoint, MS Teams and Power Automate Flow.
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <Pill text="React" />
+              <Pill text="SPFx" />
+            </div>
+          </div>
+          <div className="col-start-1 col-span-1 uppercase text-sm font-semibold mt-1 text-purple-600">
+            July 2021 - Aug 2021
+          </div>
+          <div className="md:col-start-2 col-span-1 flex flex-col space-y-2">
+            <h3 className="font-semibold">Contractor @ RedHill Education</h3>
+            <p className="text-base">
+              Over the course of 3 weeks, rebuilt the existing staff intranet
+              using Google Pages. Delivered technical documentation to ensure
+              smooth handover of the implemented solution to the internal staff
+              at RedHill after my contract was completed.
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <Pill text="HTML" />
+              <Pill text="CSS" />
+            </div>
           </div>
         </div>
       </section>
