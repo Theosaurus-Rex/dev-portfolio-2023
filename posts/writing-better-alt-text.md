@@ -57,11 +57,11 @@ Having said that, it can be useful to describe the _type_ of image that is being
 
 If you’ve read this far, you might be under the impression that alt text needs to be dry and objective, however, this is not always the case. The same image may be described differently depending on the surrounding page context. Take the following image, for example:
 
-![An oil painting of King Henry VII.](https://www.rmg.co.uk/sites/default/files/styles/large_no_alt/public/2022-10/Henry%20VIII%2C%201491-1547%20by%20Hans%20Holbein%2C%20BHC2763.jpg?itok=9iFIFNQi)
+![An oil painting of King Henry VIII.](https://www.rmg.co.uk/sites/default/files/styles/large_no_alt/public/2022-10/Henry%20VIII%2C%201491-1547%20by%20Hans%20Holbein%2C%20BHC2763.jpg?itok=9iFIFNQi)
 
 _Image Credit: [Royal Museums Greenwich](https://www.rmg.co.uk/stories/topics/royal-portraits-royal-museums-greenwichs-collection)_
 
-If this image was being used in an article about the history of the Royal Family, the alt text may simply read as `alt="An oil painting of King Henry VII"` . However, if it was to be included in an article about the history of royal fashion, the appearance of Henry’s clothes becomes much more important to the reader. In this case, we may include more information about his outfit, for example, `alt="An oil painting of King Henry VII, depicted wearing an embroidered gold doublet, black bejewelled hat and fur-trimmed coat".` Think about the relevant information at the image is conveying in context of the rest of the content on the page, and try to communicate that visual information to the reader when writing alt text.
+If this image was being used in an article about the history of the Royal Family, the alt text may simply read as `alt="An oil painting of King Henry VIII"` . However, if it was to be included in an article about the history of royal fashion, the appearance of Henry’s clothes becomes much more important to the reader. In this case, we may include more information about his outfit, for example, `alt="An oil painting of King Henry VIII, depicted wearing an embroidered gold doublet, black bejewelled hat and fur-trimmed coat".` Think about the relevant information at the image is conveying in context of the rest of the content on the page, and try to communicate that visual information to the reader when writing alt text.
 
 ## Special use cases
 
