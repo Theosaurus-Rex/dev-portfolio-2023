@@ -7,7 +7,15 @@ imageUrl: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=3
 
 As an active member of Dev Twitter, I'm more than familiar with the kinds of tweets circulating the tech community. Code snippets, portfolio highlights, and celebratory posts following successful job interviews are always a pleasure to see. However, a trend I've noticed among so-called "Code Influencers" (Codefluencers?) is the generic numbered list of "Steps to Become a Full Stack Developer", which usually go something like this:
 
-<blockquote clasName="twitter-tweet"><p lang="en" dir="ltr">Stage 1 – HTML, DOM.<br>Stage 2 – CSS (Grid, Flex.)<br>Stage 3 – JavaScript.<br>Stage 4 – React.<br>Stage 5 – Node.js<br>Stage 6 – MySQL.<br>Stage 7 – MongoDB.<br>Stage 8 – The CRUD pattern.<br>Stage 9 – Back-end XP at your first job.<br>🏆 – Full Stack developer.</p>- Ghost Together (@GhostTogether) <a href="https://twitter.com/GhostTogether/status/1319397557571887105?ref_src=twsrc%5Etfw">October 22, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+1. HTML, DOM
+1. CSS (Grid, Flex)
+1. JavaScript
+1. React
+1. Node.js
+1. MySQL
+1. MongoDB
+1. The CRUD pattern
+1. Congrats, you're a full stack developer
 
 While I'm a strong advocate for self-education when it comes to coding, and believe that you should follow whatever tech stack interests you, I feel as though there's a huge push for people to learn JavaScript IMMEDIATELY after HTML and CSS basics are mastered. It feels like it's almost required to continue web development.
 
