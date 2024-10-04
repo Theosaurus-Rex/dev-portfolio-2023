@@ -62,6 +62,7 @@ export default function Home() {
               <li>JavaScript/TypeScript</li>
               <li>React</li>
               <li>NextJS</li>
+              <li>Storybook</li>
             </ul>
           </div>
           <div className="flex flex-col md:col-start-2 col-span-1">
@@ -83,6 +84,7 @@ export default function Home() {
               <li>Trello/Jira/Notion</li>
               <li>Figma</li>
               <li>Miro</li>
+              <li>Prismic CMS</li>
             </ul>
           </div>
         </div>
