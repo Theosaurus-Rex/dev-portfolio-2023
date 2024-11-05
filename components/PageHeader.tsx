@@ -13,6 +13,9 @@ const navigation = [
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const handleLinkClick = () => {
+    setMobileMenuOpen(false);
+  };
 
   return (
     <header className="bg-white">
@@ -79,6 +82,7 @@ export default function Example() {
                   <Link
                     key={item.name}
                     href={item.href}
+                    onClick={handleLinkClick}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-purple-600  hover:bg-purple-50"
                   >
                     {item.name}
