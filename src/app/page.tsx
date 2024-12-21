@@ -18,7 +18,7 @@ export default function Home() {
         <p className="text-lg text-left text-gray-800">
           Currently I work as a Technical Consultant and Full-Stack Developer at
           <Link
-            className="ml-2 text-purple-600"
+            className="ml-2 text-purple-600 underline hover:text-black"
             href="https://alembic.com.au/"
             target="_blank"
           >
@@ -32,7 +32,7 @@ export default function Home() {
           End Development and enjoy building clean and intuitive user
           experiences. I also have a background in Fine Art, and have
           <Link
-            className="ml-2 text-purple-600"
+            className="ml-2 text-purple-600 underline hover:text-black"
             href="https://dribbble.com/Theosaurus-Rex"
             target="_blank"
           >
