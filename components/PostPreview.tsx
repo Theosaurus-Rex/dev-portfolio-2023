@@ -24,10 +24,10 @@ const PostPreview = (props: PostMetadata) => {
             </time>
           </div>
           <div className="group relative">
-            <h3 className="mt-3 text-xl font-semibold leading-6 text-gray-900 group-hover:text-purple-600">
+            <h2 className="mt-3 text-xl font-semibold leading-6 text-gray-900 group-hover:text-purple-600">
               <span className="absolute inset-0" />
               {props.title}
-            </h3>
+            </h2>
             <p className="mt-5 line-clamp-3 text-md leading-6 text-gray-600">
               {props.description}
             </p>

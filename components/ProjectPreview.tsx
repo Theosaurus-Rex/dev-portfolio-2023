@@ -16,9 +16,9 @@ const ProjectPreview = (props: ProjectMetadata) => {
       </div>
       <div>
         <div className="group relative max-w-xl">
-          <h3 className="mt-3 text-3xl font-semibold leading-6 text-gray-900">
+          <h2 className="mt-3 text-3xl font-semibold leading-6 text-gray-900">
             {props.name}
-          </h3>
+          </h2>
           <p className="mt-5 text-xl leading-6 text-gray-600">
             {props.description}
           </p>
