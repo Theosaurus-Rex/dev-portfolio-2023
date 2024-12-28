@@ -11,7 +11,7 @@ export default function Home() {
         </h1>
         <p className="text-lg text-left text-gray-800">
           I've been a technical consultant for the last three years, where I've
-          had the opportunity to work on broad range of greenfield projects.
+          had the opportunity to work on a broad range of greenfield projects.
           Industries I've developed solutions for include natural resources,
           education, and the automotive industry.
         </p>
