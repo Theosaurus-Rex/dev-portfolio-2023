@@ -24,7 +24,9 @@ const PageFooter = () => {
             target="_blank"
           ></SocialIcon>
         </div>
-        <p>Developed with 💜 by Theo Harris</p>
+        <p aria-label="Developed with love by Theo Harris">
+          Developed with 💜 by Theo Harris
+        </p>
       </div>
     </footer>
   );
