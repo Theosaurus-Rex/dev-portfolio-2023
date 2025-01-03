@@ -4,7 +4,10 @@ export default function Home() {
   return (
     <main className="flex flex-col p-16 space-y-10">
       <section className="flex flex-col space-y-4">
-        <h1 className="text-left text-6xl font-bold text-gray-800">
+        <h1
+          className="text-left text-6xl font-bold text-gray-800"
+          aria-label="I'm Theo, a Full Stack Developer from Sydney, Australia."
+        >
           I'm Theo, a{" "}
           <span className="text-purple-600">Full Stack Developer</span> from
           Sydney, Australia.
