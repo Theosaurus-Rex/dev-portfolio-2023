@@ -107,13 +107,13 @@ export default function Home() {
               greenfield projects across several different business domains,
               including education, natural resources, and automotive services.
             </p>
-            <div className="flex flex-wrap gap-2">
+            <ul className="flex flex-wrap gap-2">
               <Pill text="Elixir" />
               <Pill text="Phoenix LiveView" />
               <Pill text="Ash Framework" />
               <Pill text="React" />
               <Pill text="Tailwind CSS" />
-            </div>
+            </ul>
           </div>
           <div className="col-start-1 col-span-1 uppercase text-sm font-semibold mt-1 text-purple-600">
             Aug 2021 - Jan 2022
@@ -125,10 +125,10 @@ export default function Home() {
               across various Microsoft ecosystem platforms, including
               SharePoint, MS Teams and Power Automate Flow.
             </p>
-            <div className="flex flex-wrap gap-2">
+            <ul className="flex flex-wrap gap-2">
               <Pill text="React" />
               <Pill text="SPFx" />
-            </div>
+            </ul>
           </div>
           <div className="col-start-1 col-span-1 uppercase text-sm font-semibold mt-1 text-purple-600">
             July 2021 - Aug 2021
@@ -141,10 +141,10 @@ export default function Home() {
               smooth handover of the implemented solution to the internal staff
               at RedHill after my contract was completed.
             </p>
-            <div className="flex flex-wrap gap-2">
+            <ul className="flex flex-wrap gap-2">
               <Pill text="HTML" />
               <Pill text="CSS" />
-            </div>
+            </ul>
           </div>
         </div>
       </section>
