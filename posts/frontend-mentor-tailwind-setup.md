@@ -151,6 +151,71 @@ Now, you should be able to add the `font-inter` class to your HTML and see your 
 <p class="font-inter">Hello World</p>
 ```
 
+## Setting Up Project Colour Palette
+
+Earlier, when you were taking a look at the `style-guide.md` file provided with the starter code, you may have noticed that the challenge creators have helpfully noted all of the different colours used to create the final design. Neat!
+
+We can now use this information to set up some more `theme` extensions, this time to the `color` property, in our `tailwind.config.js` file. This will allow us to set up utility classes for the colours we'll need to build our project.
+
+If we take a look at the colours provided in the starter code for the [Recipe Page Challenge](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm), we'll see the following:
+
+```markdown
+## Colors
+
+- White: hsl(0, 0%, 100%)
+
+- Stone 100: hsl(30, 54%, 90%)
+- Stone 150: hsl(30, 18%, 87%)
+- Stone 600: hsl(30, 10%, 34%)
+- Stone 900: hsl(24, 5%, 18%)
+
+- Brown 800: hsl(14, 45%, 36%)
+
+- Rose 800: hsl(332, 51%, 32%)
+- Rose 50: hsl(330, 100%, 98%)
+```
+
+This is awesome - the colours are already named for us (naming is hard), and they've been given number values, just like the base colours that Tailwind provides us with!
+
+We can now add these colours to our `tailwind.config.js` file like so:
+
+```javascript
+module.exports = {
+  content: ["index.html"],
+  theme: {
+    extend: {
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+      },
+      colors: {
+        stone: {
+          100: "hsl(30, 54%, 90%)",
+          150: "hsl(30, 18%, 87%)",
+          600: "hsl(30, 10%, 34%)",
+          900: "hsl(24, 5%, 18%)",
+        },
+        brown: {
+          800: "hsl(14, 45%, 36%)",
+        },
+        rose: {
+          50: "hsl(330, 100%, 98%)",
+          800: "hsl(332, 51%, 32%)",
+        },
+      },
+    },
+  },
+  plugins: [],
+};
+```
+
+Now we can use these custom colours just as we would with the base colours provided by Tailwind!
+
+```html
+<button class="bg-rose-800 text-stone-100">Click me!</button>
+```
+
+If you'd like to learn more about how you can customise colours in your Tailwind config, I'd recommend checking out Tailwind's [docs on Customizing Colors](https://tailwindcss.com/docs/customizing-colors#customizing).
+
 ## Footnotes
 
 [^1]: If this is something you're interested in, I highly recommend checking out the [Lean Web Club by Chris Ferdinandi](https://members.gomakethings.com/)
