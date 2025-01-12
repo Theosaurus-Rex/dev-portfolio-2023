@@ -84,6 +84,73 @@ Finally, you'll want to include a `link` tag inside the `head` of your `index.ht
 
 You should now be able to test that Tailwind is working in this file. I typically add something like `class="text-red-600"` to the `body` tag inside `index.html` and confirm that the text does indeed turn red.
 
+## Installing Project Fonts
+
+When you download the starter code for a project from Frontend Mentor, they include font files for the fonts used in the design you'll be building. This usually includes a combination of both variable and static font files. For our purposes, we'll be using the files provided in `./assets/fonts/static`.
+
+I'd recommend taking a look at these files as well as the `style-guide.md` file provided in the project root to get an idea of which fonts are used, and which font weights are required.
+
+### Adding `@font-face` Rules
+
+Once you've gotten your bearings, you'll want to create another new CSS file in the root of the project (I typically call this file `fonts.css`), and then define `@font-face` rules for each of the font files provided in the starter code:
+
+```css
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  src: url("assets/fonts/static/Inter-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 600;
+  src: url("assets/fonts/static/Inter-SemiBold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  src: url("assets/fonts/static/Inter-Bold.ttf") format("ttf");
+}
+```
+
+The example above is from my solution to the [Social Links Profile Challenge](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ), which uses the Inter font in 3 different weights.
+
+Once you've defined your font faces, you'll want to link the stylesheet in your HTML document as we did with `output.css` earlier:
+
+```html
+<link href="fonts.css" rel="stylesheet" />
+```
+
+### Extending Tailwind Config
+
+Now, we need to extend our `theme` inside `tailwind.config.js` to add some utility classes to apply our project fonts where we need them:
+
+```javascript
+module.exports = {
+  purge: ["./index.html"],
+  theme: {
+    extend: {
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+      },
+    },
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
+};
+```
+
+Note that if your project has multiple custom fonts, you can define as many properties as you need inside the `fontFamily` object. You can name these properties whatever you like, but I typically just snake-case the name of the font to align with how most Tailwind utilities are written out of the box, e.g. `comic-sans`.
+
+Now, you should be able to add the `font-inter` class to your HTML and see your new font applied to your markup!
+
+```html
+<p class="font-inter">Hello World</p>
+```
+
 ## Footnotes
 
 [^1]: If this is something you're interested in, I highly recommend checking out the [Lean Web Club by Chris Ferdinandi](https://members.gomakethings.com/)
