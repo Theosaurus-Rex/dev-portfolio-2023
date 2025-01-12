@@ -11,9 +11,79 @@ One of the great things about the platform is they simply provide a design and s
 
 Having said that, I do still far and away prefer Tailwind as my styling solution for side projects. I've been using it professionally for around three years now, and I find it strikes a nice balance between useful default utility classes and a pleasant DX when it comes to expanding its base capabilties. I'm not suggesting that beginners should build with Tailwind straight away - definitely go learn CSS first! But as someone who is very comfortable with how CSS itself works, Tailwind is a productivity boon for me, personally, as I understand what its utility classes are doing under the hood.
 
-Therefore, as I've worked through several of Frontend Mentor's challenges, I've had to add Tailwind to the provided project starter code quite a few times now. I figured it may be helpful to other developers who are newer to the platform, but who would also like to utilise Tailwind in their own projects, to document my workflow for installing and configuring Tailwind on a typical starter project[^2].
+Therefore, as I've worked through several of Frontend Mentor's challenges, I've had to add Tailwind to the provided project starter code quite a few times now. I figured it may be helpful to other developers who are newer to the platform, but who would also like to utilise Tailwind in their own projects, to document my workflow for installing and configuring Tailwind on a typical starter project. As is the way with many things in dependency management, there's about a million different ways to do this. This is simply my preferred method, so your mileage may vary.
+
+## Installing Tailwind
+
+### Package Installation
+
+First, you'll want to navigate to the root directory of the starter code you've downloaded from Frontend Mentor, and run the following command to install Tailwind and its dependencies:
+
+`npm install -D tailwindcss postcss autoprefixer`
+
+Some notes on dependencies:
+
+- Tailwind CSS uses PostCSS to process your CSS. PostCSS is a tool for transforming CSS with JavaScript plugins, and Tailwind CSS itself is a PostCSS plugin.
+- Autoprefixer is a PostCSS plugin that adds vendor prefixes to your CSS rules using values from "Can I Use". It ensures that your CSS works across different browsers.
+
+These technically aren't required to install Tailwind in your project, but I've generally found things run smoother when using them.
+
+### Initialise TailwindCSS
+
+Next, we want to generate the `tailwind.config.js` and `postcss.config.js` files using the following command:
+
+`npx tailwindcss init -p`
+
+### Configure Source Paths
+
+Next, navigate to `tailwind.config.js` and add `index.html` to the `content` array - this will ensure that unneccessary styles get purged. You can read a bit more about how this works in practice in [Tailwind's Content Config docs](https://tailwindcss.com/docs/content-configuration).
+
+Note that if you create multiple HTML files for your project that are going to be styled with Tailwind utility classes, you'll have to add their paths to this array as well.
+
+```javascript
+module.exports = {
+  content: ["index.html"],
+  theme: {},
+  plugins: [],
+};
+```
+
+### Include Tailwind in your CSS
+
+Create a CSS file (I typically just name mine `styles.css`) in your project root and add the following to it:
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+### Adding and Running a Build Script
+
+In your `package.json` file, add a script to build your CSS. This will create an `output.css` files with the styles that are built. The `--watch` flag lets us observe CSS changes in realtime, meaning we don't have to restart our script every time we update our styles.
+
+Note that you can name this command whatever you'd like - I'm just following convention here.
+
+```javascript
+"scripts": {
+  "build:css": "tailwindcss build styles.css -o output.css --watch"
+}
+```
+
+Now you can compile your CSS by running the script like so:
+
+`npm run build:css`
+
+### Linking the Stylesheet
+
+Finally, you'll want to include a `link` tag inside the `head` of your `index.html` file (and any other HTML files you want your styles to apply to):
+
+```html
+<link href="output.css" rel="stylesheet" />
+```
+
+You should now be able to test that Tailwind is working in this file. I typically add something like `class="text-red-600"` to the `body` tag inside `index.html` and confirm that the text does indeed turn red.
 
 ## Footnotes
 
 [^1]: If this is something you're interested in, I highly recommend checking out the [Lean Web Club by Chris Ferdinandi](https://members.gomakethings.com/)
-[^2]: As is the way with many things in dependency management, there's about a million different ways to do this. This is simply my preferred method, so your mileage may vary.
