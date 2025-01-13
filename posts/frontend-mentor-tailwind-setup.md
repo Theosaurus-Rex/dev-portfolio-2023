@@ -216,6 +216,14 @@ Now we can use these custom colours just as we would with the base colours provi
 
 If you'd like to learn more about how you can customise colours in your Tailwind config, I'd recommend checking out Tailwind's [docs on Customizing Colors](https://tailwindcss.com/docs/customizing-colors#customizing).
 
+## Final Thoughts
+
+That's about all you'll need to get up and running and ready to start coding your Frontend Mentor solution with Tailwind!
+
+While initially I kind of felt like installing several packages in a small challenge project was overkill, in my case, I find the tradeoff worth it when consdering the productivity benefits I get from using Tailwind. Ultimately, the purpose of these challenges is for learning, so using a framework I know well for styling is allowing me to focus on other areas, such as HTML semantics and trying out the occasional front end framework. I know this won't be the case for everyone, and that's okay! I'd encourage you to find a workflow that best addresses your needs and learning goals.
+
+If you ever want to get some feedback on a challenge solution, feel free to [hit me up on FEM!](https://www.frontendmentor.io/profile/Theosaurus-Rex)
+
 ## Footnotes
 
 [^1]: If this is something you're interested in, I highly recommend checking out the [Lean Web Club by Chris Ferdinandi](https://members.gomakethings.com/)
