@@ -1,8 +1,8 @@
 ---
 title: How I set up my Frontend Mentor projects with Tailwind CSS
-description: A quick setup guide for adding Tailwind to the default Frontend Mentor starter code downloads.
+description: A quick setup guide for adding Tailwind to the starter code for projects on Frontend Mentor.
 date: "2025/01/12"
-imageUrl: "https://www.frontendmentor.io/_next/image?url=%2Fstatic%2Fimages%2Flogo-desktop.svg&w=640&q=75"
+imageUrl: "https://images.unsplash.com/photo-1634055598720-9ff0db7352d7?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 ---
 
 Recently at work there has been a shift in our workload that means I'm not in my usual happy place as a developer - that is to say, there are no front end features to be built. To remedy this, I've hopped back into the projects provided on [Frontend Mentor](https://www.frontendmentor.io/), a platform that provides beautiful UI mockups that developers can turn into real projects. I started on their platform about a year ago, and I've been super impressed, not only by the quality of the projects, but also by the focus on community building and particularly on educating developers on accessibility best practices. It's a fantastic resource that I highly recommend for any developer looking to hone their frontend skills on realistic projects - there are varying degrees of difficulty, starting from very simple projects that only require HTML and CSS to build, so there's something for every skill level!
