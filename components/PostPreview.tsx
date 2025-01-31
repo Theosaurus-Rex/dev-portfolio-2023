@@ -9,7 +9,7 @@ const PostPreview = (props: PostMetadata) => {
           <img
             src={props.imageUrl || ""}
             alt=""
-            className="aspect-[16/9] w-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0 sm:aspect-[2/1] lg:aspect-[3/2]"
+            className="aspect-16/9 w-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0 sm:aspect-2/1 lg:aspect-3/2"
           />
           <div className="absolute inset-0 bg-purple-500 opacity-30 transition-opacity duration-500 group-hover:opacity-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
         </div>
