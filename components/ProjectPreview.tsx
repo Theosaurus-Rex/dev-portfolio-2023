@@ -6,7 +6,7 @@ const ProjectPreview = (props: ProjectMetadata) => {
       key={props.slug}
       className="relative isolate flex flex-col gap-8 lg:flex-row"
     >
-      <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
+      <div className="relative aspect-16/9 sm:aspect-2/1 lg:aspect-square lg:w-64 lg:shrink-0">
         <img
           src={props.imageSrc}
           alt={props.name}
@@ -25,13 +25,13 @@ const ProjectPreview = (props: ProjectMetadata) => {
           <div className="flex flex-row space-x-4 mt-4">
             <a
               href={props.liveUrl}
-              className="inline-flex items-center rounded-md bg-purple-600 px-3 py-2 text-lg font-semibold text-white shadow-sm hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-500"
+              className="inline-flex items-center rounded-md bg-purple-600 px-3 py-2 text-lg font-semibold text-white shadow-xs hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-500"
             >
               View Live
             </a>
             <a
               href={props.githubUrl}
-              className="inline-flex items-center rounded-md bg-purple-600 px-3 py-2 text-lg font-semibold text-white shadow-sm hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-500"
+              className="inline-flex items-center rounded-md bg-purple-600 px-3 py-2 text-lg font-semibold text-white shadow-xs hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-500"
             >
               View Code
             </a>
