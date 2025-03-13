@@ -10,11 +10,9 @@ const WeekNotesIndex = () => {
   return (
     <div className="flex flex-col">
       <h1 className="text-6xl font-bold text-gray-800 text-center my-8">
-        Week Notes
+        Weeknotes
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {weekNotePreviews}
-      </div>
+      <ul className="flex flex-col">{weekNotePreviews}</ul>
     </div>
   );
 };

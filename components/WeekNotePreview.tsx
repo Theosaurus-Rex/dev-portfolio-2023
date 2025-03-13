@@ -21,11 +21,13 @@ const WeekNotePreview = (props: WeekNoteMetadata) => {
   const dateRange = formatDateRange(props.weekStart, props.weekEnd);
 
   return (
-    <Link href={`/weeknotes/${props.slug}`}>
-      <h2 className="font-bold text-violet-600 hover:underline mb-4">
-        {dateRange}
-      </h2>
-    </Link>
+    <li>
+      <Link href={`/weeknotes/${props.slug}`}>
+        <h2 className="w-full text-center font-bold text-2xl text-violet-500 underline hover:text-violet-900 mb-4">
+          {dateRange}
+        </h2>
+      </Link>
+    </li>
   );
 };
 
