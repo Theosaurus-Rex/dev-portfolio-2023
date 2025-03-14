@@ -8,19 +8,19 @@ const PageFooter = () => {
           <SocialIcon
             label="See Theo on LinkedIn"
             url="https://www.linkedin.com/in/theo-harris-coder/"
-            bgColor="#9333ea"
+            bgColor="oklch(0.627 0.265 303.9)"
             target="_blank"
           ></SocialIcon>
           <SocialIcon
             label="See Theo's profile on GitHub"
             url="https://github.com/Theosaurus-Rex"
-            bgColor="#9333ea"
+            bgColor="oklch(0.627 0.265 303.9)"
             target="_blank"
           ></SocialIcon>
           <SocialIcon
             label="See Theo's design work on Dribbble"
             url="https://dribbble.com/Theosaurus-Rex"
-            bgColor="#9333ea"
+            bgColor="oklch(0.627 0.265 303.9)"
             target="_blank"
           ></SocialIcon>
         </div>
