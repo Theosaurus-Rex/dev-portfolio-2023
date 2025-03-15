@@ -1,10 +1,20 @@
-import Link from "next/link";
 import "./globals.css";
-import { Inter } from "next/font/google";
+
+import { Kanit } from "next/font/google";
+import { Climate_Crisis } from "next/font/google";
 import PageHeader from "../../components/PageHeader";
 import PageFooter from "../../components/PageFooter";
 
-const inter = Inter({ subsets: ["latin"] });
+const kanit = Kanit({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
+const climateCrisis = Climate_Crisis({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-climate-crisis",
+});
 
 export const metadata = {
   title: "Theo Harris",
@@ -18,7 +28,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={`${kanit.className} ${climateCrisis.variable} font-sans`}
+      >
         <div>
           <PageHeader />
           {children}
