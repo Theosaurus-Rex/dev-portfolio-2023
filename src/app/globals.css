@@ -33,3 +33,7 @@
   --font-climate-crisis: "Climate Crisis", sans-serif;
   --font-kanit: "Kanit", sans-serif;
 }
+
+.text-outline {
+  -webkit-text-stroke: 2px var(--color-black);
+}
