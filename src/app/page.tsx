@@ -38,6 +38,9 @@ export default function Home() {
           </p>
         </div>
       </section>
+      <h2 className="font-climate-crisis text-orange uppercase font-bold text-6xl m-4 text-outline">
+        Stack
+      </h2>
     </main>
   );
 }
