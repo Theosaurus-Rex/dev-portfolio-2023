@@ -18,6 +18,8 @@ const technologies = [
   { name: "Phoenix", icon: "/images/tech_icons/phoenix.svg" },
 ];
 
+const bgColors = ["bg-blue", "bg-purple", "bg-orange", "bg-pink", "bg-lime"];
+
 const TechStack = () => {
   return (
     <div className="w-full tech-stack-fade">
@@ -42,7 +44,9 @@ const TechStack = () => {
               alt={`${tech.name} icon`}
               width={60}
               height={60}
-              className="border-3 border-black rounded-md p-2"
+              className={`${
+                bgColors[index % bgColors.length]
+              } border-3 border-black rounded-md p-2`}
             />
           </SwiperSlide>
         ))}
