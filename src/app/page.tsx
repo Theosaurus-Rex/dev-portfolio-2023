@@ -39,13 +39,23 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <div className="flex items-center w-full">
-        <h2 className="font-climate-crisis text-orange uppercase font-bold text-4xl md:text-6xl m-4 text-outline-mobile md:text-outline-tablet tracking-wider">
-          Stack
-        </h2>
-        <hr className="border md:border-2 border-black w-full" />
-      </div>
-      <TechStack />
+      <section>
+        <div className="flex items-center w-full">
+          <h2 className="font-climate-crisis text-orange uppercase font-bold text-4xl md:text-6xl m-4 lg:my-8 lg:mx-0 text-outline-mobile md:text-outline-tablet tracking-wider">
+            Stack
+          </h2>
+          <hr className="border md:border-2 border-black w-full" />
+        </div>
+        <TechStack />
+      </section>
+      <section>
+        <div className="flex items-center w-full">
+          <h2 className="font-climate-crisis text-blue uppercase font-bold text-4xl md:text-6xl m-4 lg:my-8 lg:mx-0 text-outline-mobile md:text-outline-tablet tracking-wider">
+            Work
+          </h2>
+          <hr className="border md:border-2 border-black w-full" />
+        </div>
+      </section>
     </main>
   );
 }
