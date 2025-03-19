@@ -1,4 +1,5 @@
 import Image from "next/image";
+import TechStack from "../../components/TechStack";
 export default function Home() {
   return (
     <main className="flex flex-col pt-4 bg-cream min-h-screen lg:px-24">
@@ -38,9 +39,13 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <h2 className="font-climate-crisis text-orange uppercase font-bold text-6xl m-4 text-outline">
-        Stack
-      </h2>
+      <div className="flex items-center w-full">
+        <h2 className="font-climate-crisis text-orange uppercase font-bold text-4xl md:text-6xl m-4 text-outline-mobile md:text-outline-tablet tracking-wider">
+          Stack
+        </h2>
+        <hr className="border md:border-2 border-black w-full" />
+      </div>
+      <TechStack />
     </main>
   );
 }

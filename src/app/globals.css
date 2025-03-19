@@ -34,6 +34,19 @@
   --font-kanit: "Kanit", sans-serif;
 }
 
-.text-outline {
+.text-outline-mobile {
+  -webkit-text-stroke: 1px var(--color-black);
+}
+
+.text-outline-tablet {
   -webkit-text-stroke: 2px var(--color-black);
+}
+
+.mySwiper {
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear !important;
 }
