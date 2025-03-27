@@ -1,5 +1,6 @@
 import Image from "next/image";
 import TechStack from "../../components/TechStack";
+import Pill from "../../components/Pill";
 export default function Home() {
   return (
     <main className="flex flex-col pt-4 bg-cream min-h-screen lg:px-24">
@@ -54,6 +55,64 @@ export default function Home() {
             Work
           </h2>
           <hr className="border md:border-2 border-black w-full" />
+        </div>
+        <div className="m-4 flex flex-col space-y-4">
+          <div className="bg-purple p-4 border-4 border-black rounded-md lg:flex-1 lg:p-4">
+            <h3 className="text-2xl font-bold uppercase italic">
+              Full Stack Developer
+            </h3>
+            <p className="font-bold italic">@ Alembic, 2022 - Present</p>
+            <p className="font-medium">
+              Developed several rapid prototypes in small, agile teams for
+              greenfield projects across several different business domains,
+              including education, natural resources, and automotive services.
+            </p>
+            <div className="flex flex-wrap gap-1.5 mt-2">
+              <Pill text="JavaScript" />
+              <Pill text="React" />
+              <Pill text="Elixir" />
+              <Pill text="Phoenix" />
+              <Pill text="LiveView" />
+              <Pill text="Tailwind" />
+              <Pill text="Ash" />
+            </div>
+          </div>
+          <div className="bg-pink p-4 border-4 border-black rounded-md lg:flex-1 lg:p-4">
+            <h3 className="text-2xl font-bold uppercase italic">
+              M365 Developer
+            </h3>
+            <p className="font-bold italic">@ Engage Squared, 2021 - 2022</p>
+            <p className="font-medium">
+              Worked in project teams alongside consultants to deliver solutions
+              across various Microsoft ecosystem platforms, including
+              SharePoint, MS Teams and Power Automate Flow.
+            </p>
+            <div className="flex flex-wrap gap-1.5 mt-2">
+              <Pill text="JavaScript" />
+              <Pill text="React" />
+              <Pill text="SPFx" />
+              <Pill text="Power Automate" />
+            </div>
+          </div>
+          <div className="bg-orange p-4 border-4 border-black rounded-md lg:flex-1 lg:p-4">
+            <h3 className="text-2xl font-bold uppercase italic">
+              Web Developer
+            </h3>
+            <p className="font-bold italic">
+              @ RedHill Education, JUL - AUG 2021
+            </p>
+            <p className="font-medium">
+              Over the course of 3 weeks, rebuilt the existing staff intranet
+              using Google Pages. Delivered technical documentation to ensure
+              smooth handover of the implemented solution to the internal staff
+              at RedHill after my contract was completed.
+            </p>
+            <div className="flex flex-wrap gap-1.5 mt-2">
+              <Pill text="HTML" />
+              <Pill text="CSS" />
+              <Pill text="Google Pages" />
+            </div>
+          </div>
         </div>
       </section>
     </main>
