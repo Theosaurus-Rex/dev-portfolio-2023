@@ -18,20 +18,21 @@ export const generateStaticParams = async () => {
   }));
 };
 
-const PostPage = (props: any) => {
-  const slug = props.params.slug;
+const PostPage = async (props: any) => {
+  const params = await props.params;
+  const slug = params.slug;
   const post = getPostContent(slug);
   return (
-    <div>
-      <div className="my-12 text-center">
+    <div className="bg-cream pb-12">
+      <div className="p-12 pb-0 text-center">
         <div className="mx-auto max-w-7xl">
           <img
             src={post.data.imageUrl}
-            className="w-full max-h-96 rounded-2xl bg-gray-100 object-cover mb-6"
+            className="w-full max-h-96 rounded-2xl object-cover mb-6 border-4 border-black"
           />
         </div>
-        <h1 className="text-4xl text-gray-900 font-bold">{post.data.title}</h1>
-        <p className="text-gray-400 mt-4 text-xl">
+        <h1 className="text-4xl font-bold">{post.data.title}</h1>
+        <p className="font-bold uppercase italic mt-4 text-xl">
           {new Date(post.data.date).toLocaleDateString("en-US", {
             year: "numeric",
             month: "long",
@@ -40,7 +41,7 @@ const PostPage = (props: any) => {
         </p>
       </div>
 
-      <article className="prose lg:prose-xl">
+      <article className="prose lg:prose-xl w-full mx-auto">
         <Markdown>{post.content}</Markdown>
       </article>
     </div>
