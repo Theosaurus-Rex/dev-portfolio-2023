@@ -29,11 +29,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${kanit.className} ${climateCrisis.variable} font-sans`}
+        className={`${kanit.className} ${climateCrisis.variable} font-sans min-h-screen`}
       >
-        <div>
+        <div className="flex flex-col min-h-screen bg-cream">
           <PageHeader />
-          {children}
+          <main className="flex-1">{children}</main>
           <PageFooter />
         </div>
       </body>

@@ -23,10 +23,10 @@ const TalkPage = (props: any) => {
   const talk = getTalkContent(slug);
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center bg-cream">
       <div className="my-12 text-center">
         <h1 className="text-4xl text-gray-900 font-bold">{talk.data.title}</h1>
-        <p className="text-gray-400 mt-4 text-xl">
+        <p className="font-bold uppercase italic mt-4 text-xl">
           {new Date(talk.data.date).toLocaleDateString("en-US", {
             year: "numeric",
             month: "long",
@@ -43,7 +43,7 @@ const TalkPage = (props: any) => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
       ></iframe>
-      <article className="prose lg:prose-xl">
+      <article className="prose lg:prose-xl mt-6">
         <Markdown>{talk.content}</Markdown>
       </article>
     </div>
