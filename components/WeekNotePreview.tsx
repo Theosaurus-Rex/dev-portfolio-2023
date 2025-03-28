@@ -23,7 +23,7 @@ const WeekNotePreview = (props: WeekNoteMetadata) => {
   return (
     <li>
       <Link href={`/weeknotes/${props.slug}`}>
-        <h2 className="w-full text-center font-bold text-2xl text-violet-500 underline hover:text-violet-900 mb-4">
+        <h2 className="w-full text-center font-bold text-2xl underline hover:text-purple mb-4">
           {dateRange}
         </h2>
       </Link>
