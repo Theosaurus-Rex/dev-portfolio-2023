@@ -56,7 +56,7 @@ export default function Home() {
           </h2>
           <hr className="border md:border-2 border-black w-full" />
         </div>
-        <div className="m-4 flex flex-col space-y-4">
+        <div className="m-4 mt-0 flex flex-col xl:flex-row gap-4">
           <div className="bg-purple p-4 border-4 border-black rounded-md lg:flex-1 lg:p-4">
             <h3 className="text-2xl font-bold uppercase italic">
               Full Stack Developer
