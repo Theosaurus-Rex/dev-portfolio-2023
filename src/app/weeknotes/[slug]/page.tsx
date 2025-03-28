@@ -25,7 +25,7 @@ const WeekNotePage = async (props: any) => {
 
   return (
     <div>
-      <article className="prose lg:prose-xl pt-12">
+      <article className="prose lg:prose-xl pt-12 mx-auto">
         <Markdown>{weeknote.content}</Markdown>
       </article>
     </div>

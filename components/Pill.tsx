@@ -1,6 +1,6 @@
 const Pill = ({ text }: { text: string }) => {
   return (
-    <li className="inline-flex items-center rounded-full bg-purple-50 px-2 py-1 text-sm font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10">
+    <li className="inline-flex items-center rounded-full bg-white px-3 py-0.5 text-sm font-medium text-black border-3 border-black">
       {text}
     </li>
   );

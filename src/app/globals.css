@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @plugin '@tailwindcss/typography';
 
@@ -18,4 +18,39 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+}
+
+@theme {
+  --color-white: oklch(100% 0 284.23);
+  --color-black: oklch(0% 0 284.23);
+  --color-pink: oklch(69.25% 0.233 351.99);
+  --color-lime: oklch(92.49% 0.2223 122.42);
+  --color-blue: oklch(83.54% 0.1235 218.63);
+  --color-orange: oklch(71.49% 0.1724 42.22);
+  --color-purple: oklch(67.64% 0.1779 284.23);
+  --color-cream: oklch(94.25% 0.0165 79.35);
+
+  --font-climate-crisis: "Climate Crisis", sans-serif;
+  --font-kanit: "Kanit", sans-serif;
+}
+
+.text-outline-mobile {
+  -webkit-text-stroke: 1px var(--color-black);
+}
+
+.text-outline-tablet {
+  -webkit-text-stroke: 2px var(--color-black);
+}
+
+.text-outline-desktop {
+  -webkit-text-stroke: 3px var(--color-black);
+}
+
+.mySwiper {
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear !important;
 }
