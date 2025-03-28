@@ -42,6 +42,10 @@
   -webkit-text-stroke: 2px var(--color-black);
 }
 
+.text-outline-desktop {
+  -webkit-text-stroke: 3px var(--color-black);
+}
+
 .mySwiper {
   overflow: hidden;
   position: relative;
