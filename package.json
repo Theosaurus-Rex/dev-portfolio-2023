@@ -15,6 +15,7 @@
     "@types/node": "22.15.30",
     "@types/react": "19.0.12",
     "@types/react-dom": "19.0.4",
+    "critters": "^0.0.23",
     "gray-matter": "^4.0.3",
     "markdown-to-jsx": "^7.7.6",
     "next": "^15.3.3",

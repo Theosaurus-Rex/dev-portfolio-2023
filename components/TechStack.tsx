@@ -1,4 +1,5 @@
 "use client";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -32,6 +33,36 @@ const technologies = [
 const bgColors = ["bg-blue", "bg-purple", "bg-orange", "bg-pink", "bg-lime"];
 
 const TechStack = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    // Only load Swiper after component mounts on client
+    setIsClient(true);
+  }, []);
+
+  // Return placeholder until client-side component is ready
+  if (!isClient) {
+    return (
+      <div className="w-full tech-stack-fade flex overflow-x-auto py-4">
+        {technologies.slice(0, 6).map((tech, index) => (
+          <div
+            key={`${tech.name}-static-${index}`}
+            className="mx-1 flex-shrink-0"
+          >
+            <div
+              className={`
+                w-16 h-16 md:w-24 md:h-24 lg:w-24 lg:h-24
+                ${bgColors[index % bgColors.length]}
+                border-3 border-black rounded-md p-2
+              `}
+              aria-label={`${tech.name} icon placeholder`}
+            />
+          </div>
+        ))}
+      </div>
+    );
+  }
+
   return (
     <div className="w-full tech-stack-fade">
       <Swiper
@@ -51,7 +82,7 @@ const TechStack = () => {
         loop={true}
         speed={3000}
         autoplay={{
-          delay: 0,
+          delay: 1000, // Delay start to improve initial load
           disableOnInteraction: false,
           pauseOnMouseEnter: false,
           stopOnLastSlide: false,
@@ -65,6 +96,7 @@ const TechStack = () => {
               alt={`${tech.name} icon`}
               width={60}
               height={60}
+              loading="lazy"
               className={`
                 w-16 h-16 md:w-24 md:h-24 lg:w-24 lg:h-24
                 ${bgColors[index % bgColors.length]}

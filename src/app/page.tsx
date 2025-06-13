@@ -1,6 +1,12 @@
+"use client";
+
+import { Suspense, lazy } from "react";
 import Image from "next/image";
-import TechStack from "../../components/TechStack";
 import Pill from "../../components/Pill";
+
+// Lazy load TechStack component
+const TechStack = lazy(() => import("../../components/TechStack"));
+
 export default function Home() {
   return (
     <main className="flex flex-col pt-4 bg-cream min-h-screen lg:px-24">
@@ -12,16 +18,26 @@ export default function Home() {
           <Image
             src="/images/Header.png"
             alt="'Sup, I'm Theo, a web developer based out of Sydney, NSW."
-            width="946"
-            height="819"
+            width={946}
+            height={819}
+            priority={true}
+            loading="eager"
+            fetchPriority="high"
+            sizes="(max-width: 1023px) 100vw, 0vw"
+            quality={85}
           />
         </div>
         <div className="hidden lg:block">
           <Image
             src="/images/HeaderDesktop.png"
             alt="'Sup, I'm Theo, and I work as a web developer based in Sydney"
-            width="3500"
-            height="1774"
+            width={3500}
+            height={1774}
+            priority={true}
+            loading="eager"
+            fetchPriority="high"
+            sizes="(min-width: 1024px) 100vw, 0vw"
+            quality={85}
           />
         </div>
       </section>
@@ -47,7 +63,13 @@ export default function Home() {
           </h2>
           <hr className="border md:border-2 border-black w-full" />
         </div>
-        <TechStack />
+        <Suspense
+          fallback={
+            <div className="h-24 bg-gray-100 rounded animate-pulse"></div>
+          }
+        >
+          <TechStack />
+        </Suspense>
       </section>
       <section>
         <div className="flex items-center w-full">
